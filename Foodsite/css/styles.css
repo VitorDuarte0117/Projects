@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(29, 28, 28);
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+main h1 {
+    text-align: center;
+    color: orange;
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#main-header {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0 5%;
+}
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orange;
+    text-transform: uppercase;
+}
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+.menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+#main-header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#main-header li {
+    margin: 0px 1rem;
+}
+#main-header nav a {
+    color: orange;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+#main-header nav a:hover {
+    color: rgb(250, 197, 99);
+}
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#side-drawer:target {
+    display: block;
+}
+#side-drawer header {
+    display: flex;
+    height: 5rem;
+    justify-content: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#side-drawer li {
+    margin: 1rem 0;
+}
+#side-drawer a {
+    color: yellow;
+    font-size: 2rem;
+}
+#latest-products {
+    width: 80%;
+    margin: 2rem auto;
+    list-style: none;
+}
+#latest-products ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.food-item {
+    background: rgb(252, 241, 195);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.food-item img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    list-style: none;
+}
+.food-item-content {
+    padding: 0rem;
+    text-align: center;
+    margin: 0px 0px 15px;
+}
+.food-item h2 {
+    margin: 0 0 1rem 0;
+}
+
+.btn {
+    background-color: rgb(224, 148, 5);
+    color: white;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+}
+.btn:hover {
+    background-color: black;
+}
+@media (max-width: 48rem) {
+    #main-header nav {
+        display: none;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    main h1 {
+        font-size: 1.5rem;
+    }
+    #latest-products ul {
+        grid-template-columns: 100%;
+    }
+}
