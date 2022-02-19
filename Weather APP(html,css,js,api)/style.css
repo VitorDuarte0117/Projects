@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-image: url("https://source.unsplash.com/1600x900/?");
+    font-size: 120%;
+}
+
+.card {
+    background-color: #000000d0;
+    padding: 2em;
+    color: white;
+    margin: 1em;
+    width: 100%;
+    border-radius: 30px;
+    max-width: 435px;
+}
+
+.search {
+    padding: 10px;
+    font-size: 17px;
+    justify-content: space-around;
+    float: left;
+    width: 14em;
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
+.fa {
+    float: left;
+    width: 5%;
+    padding: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 1px;
+    outline: none;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+.search button:hover {
+    background: #000000d0;
+    color: white;
+}
+.search button {
+    margin: 1px;
+    outline: none;
+    border-radius: 15px;
+}
+.search input {
+    border: none;
+    font-size: 120%;
+    width: max-width;
+    outline: none;
+    margin-left: 2.5em;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.5px;
+}
+h1.tempo {
+    margin: 0px;
+}
+.description,
+.wind,
+.humidity,
+.description,
+.temp {
+    text-transform: capitalize;
+}
+.weather.loading {
+    visibility: hidden;
+    position: relative;
+}
+.weather.loading::after {
+    visibility: visible;
+    content: "loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
